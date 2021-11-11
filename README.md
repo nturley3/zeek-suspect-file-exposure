@@ -29,14 +29,10 @@ This script generates multiple notices:
 
 | Field Value | Description |
 | -- | -- |
-| HTTPFileExposure:Office_File | This indicates access to a
-MS Office type file (excel, PST etc). |
-| HTTPFileExposure:Database_File | This indicates access to a 
-database file, SQL dump etc. |
-| HTTPFileExposure:Sensitive_File | This indicates access to a 
-general sensntive file (.htaccess, wordpress config etc). |
-| HTTPFileExposure:SourceCode_File | This indicates access to a 
-potentially sensitive source code file (python, perl, ruby etc). |
+| HTTPFileExposure:Office_File | This indicates access to a MS Office type file (excel, PST etc). |
+| HTTPFileExposure:Database_File | This indicates access to a database file, SQL dump etc. |
+| HTTPFileExposure:Sensitive_File | This indicates access to a general sensntive file (.htaccess, wordpress config etc). |
+| HTTPFileExposure:SourceCode_File | This indicates access to a potentially sensitive source code file (python, perl, ruby etc). |
 
 
 About
