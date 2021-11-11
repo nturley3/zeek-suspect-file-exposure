@@ -1,7 +1,7 @@
 Sensitive File Exposure Detection
 ======================
 
-Bro module which detects access to possibly sensitive files that are exposed.
+Zeek module which detects access to possibly sensitive files that are exposed.
 This includes files such as source code files, database files, config files
 such as .htaccess and others. 
 
@@ -12,30 +12,32 @@ files.
 Installation/Upgrade
 ------------
 
-This is easiest to install through the Bro package manager::
+This is easiest to install through the Zeek package manager::
 
-	bro-pkg refresh
-	bro-pkg install nturley3/zeek-suspect-file-exposure
+	zkg refresh
+	zkg install nturley3/zeek-suspect-file-exposure
 
 If you need to upgrade the package::
 
-	bro-pkg refresh
-	bro-pkg upgrade nturley3/zeek-suspect-file-exposure
+	zkg refresh
+	zkg upgrade nturley3/zeek-suspect-file-exposure
 
 Usage
 -----
 
 This script generates multiple notices:
 
-**HTTPFileExposure:Office_File** - This indicates access to a
-MS Office type file (excel, PST etc).
+| Field Value | Description |
+| -- | -- |
+| HTTPFileExposure:Office_File | This indicates access to a
+MS Office type file (excel, PST etc). |
+| HTTPFileExposure:Database_File | This indicates access to a 
+database file, SQL dump etc. |
+| HTTPFileExposure:Sensitive_File | This indicates access to a 
+general sensntive file (.htaccess, wordpress config etc). |
+| HTTPFileExposure:SourceCode_File | This indicates access to a 
+potentially sensitive source code file (python, perl, ruby etc). |
 
-**HTTPFileExposure:Database_File** - This indicates access to a 
-database file, SQL dump etc.  
 
-**HTTPFileExposure:Sensitive_File** - This indicates access to a 
-general sensntive file (.htaccess, wordpress config etc).
-
-**HTTPFileExposure:SourceCode_File** - This indicates access to a 
-potentially sensitive source code file (python, perl, ruby etc). 
-  
+About
+Written by @nturley3 and @forewarned.
