@@ -12,17 +12,27 @@ files.
 Installation/Upgrade
 ------------
 
-This is easiest to install through the Zeek package manager::
+This script was written and tested
+
+Install the latest version through the Zeek package manager:
 
 	zkg refresh
-	zkg install nturley3/zeek-suspect-file-exposure
+	zkg install https://github.com/nturley3/zeek-suspect-file-exposure
 
-If you need to upgrade the package::
+To upgrade the package:
 
 	zkg refresh
-	zkg upgrade nturley3/zeek-suspect-file-exposure
+	zkg upgrade zeek-http-rce
 
-Usage
+See the [Zeek Package Manager Docs](https://docs.zeek.org/projects/package-manager/en/stable/quickstart.html) for more information.
+
+
+## Configuration
+
+No additional Zeek configuration is necessary for this module.
+
+
+Generated Outputs
 -----
 
 This script generates multiple notices:
@@ -36,4 +46,4 @@ This script generates multiple notices:
 
 
 About
-Written by @nturley3 and @forewarned.
+Written by @nturley3.
