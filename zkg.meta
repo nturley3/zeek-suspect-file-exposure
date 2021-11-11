@@ -2,4 +2,4 @@
 description = Detects access to suspicious and possibly sensitive files over HTTP
 tags = dlp, files
 script_dir = scripts
-version = 1.1.0
+
