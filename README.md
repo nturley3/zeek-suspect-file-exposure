@@ -22,7 +22,7 @@ Install the latest version through the Zeek package manager:
 To upgrade the package:
 
 	zkg refresh
-	zkg upgrade zeek-http-rce
+	zkg upgrade  nturley3/zeek-suspect-file-exposure
 
 See the [Zeek Package Manager Docs](https://docs.zeek.org/projects/package-manager/en/stable/quickstart.html) for more information.
 
@@ -45,5 +45,5 @@ This script generates multiple notices:
 | HTTPFileExposure:SourceCode_File | This indicates access to a potentially sensitive source code file (python, perl, ruby etc). |
 
 
-About
+## About
 Written by @nturley3.
