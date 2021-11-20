@@ -46,4 +46,4 @@ This script generates multiple notices:
 
 
 ## About
-Written by @nturley3.
+Written by [@nturley3](https://github.com/nturley3).
